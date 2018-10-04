@@ -10,7 +10,7 @@ RSpec.describe 'Admin Dashboard', type: :feature do
     it 'shows the admin page' do
       visit Hyrax::Engine.routes.url_helpers.dashboard_path
       within '.sidebar' do
-        expect(page).to have_link('Activity summary')
+        expect(page).to have_link('System status')
         expect(page).to have_link('Profile')
         expect(page).to have_link('Notifications')
         expect(page).to have_link('Transfers')
